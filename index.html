@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faces for Places</title>
+<meta name="description" content="A pixel-art city watch face for Garmin watches. The sky follows your real sunrise and sunset, and your local weather: rain, snow, storms and clouds.">
+<meta property="og:title" content="Faces for Places">
+<meta property="og:description" content="A pixel-art city watch face for Garmin watches, whose sky follows your day and your weather.">
+<meta property="og:image" content="img/hero.png">
+<link rel="icon" href="img/cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="home" href="./"><img src="img/cover.png" alt="">Faces for Places</a>
+    <a href="#faq">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <img class="hero" src="img/hero.png" width="1440" height="720"
+       alt="Faces for Places Lite: pixel-art London at dawn on a round watch, with day and night versions beside it">
+
+  <h1>A tiny pixel-art city that lives through your day</h1>
+  <p class="lead">A watch face for Garmin watches. The sky follows your real sunrise and sunset, and when it rains,
+    snows or storms where you are, it does on your watch too.</p>
+
+  <!-- STORE LINK: when the Lite listing is live, replace this with
+       <a class="cta" href="https://apps.garmin.com/apps/...">Get Faces for Places Lite (free)</a> -->
+  <span class="cta" aria-disabled="true">Faces for Places Lite: coming soon to the Connect IQ Store</span>
+
+  <h2>What it does</h2>
+  <div class="gallery">
+    <figure><img src="img/daycycle.gif" width="390" height="390" alt="London's sky through a whole day"><figcaption>Dawn, day, dusk and night, timed to your sun</figcaption></figure>
+    <figure><img src="img/storm.gif" width="390" height="390" alt="A thunderstorm over London with lightning"><figcaption>Live weather: rain, snow, storms, sleet, clouds</figcaption></figure>
+    <figure><img src="img/snow.gif" width="390" height="390" alt="Snow falling and settling on London's roofs"><figcaption>Snow settles on the roofs</figcaption></figure>
+    <figure><img src="img/fireworks.gif" width="390" height="390" alt="Fireworks over London"><figcaption>Fireworks when you reach a goal</figcaption></figure>
+  </div>
+
+  <ul>
+    <li>A short wake animation when you raise your wrist</li>
+    <li>Up to three slots: heart rate, steps, battery, Body Battery, stress, temperature, UV index, sunrise and
+      sunset, calories, floors, intensity minutes, Pulse Ox, respiration, sleep score, altitude, recovery time, alarms</li>
+    <li>Weather from Garmin, Open-Meteo or OpenWeather, for where you are or a place you choose</li>
+    <li>Always-on mode with the time, and the date if you like</li>
+    <li>English, German, French, Italian and Spanish</li>
+  </ul>
+
+  <h2>Two editions</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Faces for Places Lite</h3>
+      <p><b>Free.</b> London from the West End rooftops: St Paul's, the London Eye, Big Ben and the Shard, with
+        every sky, weather, animation and setting.</p>
+    </div>
+    <div class="card">
+      <h3>Faces for Places</h3>
+      <p><b>£2.99, coming soon.</b> London, New York, Paris, Manchester and Giza, plus "Nearest to me", which shows
+        the city closest to you, with more cities to come.</p>
+    </div>
+  </div>
+  <img class="wide" src="img/teaser.png" width="1440" height="720"
+       alt="The cities of the full edition at different times of day, and a circle inviting suggestions for more">
+
+  <h2>On your screen</h2>
+  <p>AMOLED watches show the scene in full colour. MIP watches (Forerunner 255, fenix 7, Enduro and others) have 64
+    colours, so they get palettes made for them, and the scene looks a little different:</p>
+  <img class="wide" src="img/watches-pair.png" width="978" height="756"
+       alt="The face on a Forerunner 165 (AMOLED) and a Forerunner 255 (MIP)">
+
+  <h2 id="faq">FAQ</h2>
+
+  <details>
+    <summary>How do I install it?</summary>
+    <p>In the Connect IQ Store app on your phone, search for "Faces for Places", choose Install, and it goes to your
+      watch at the next sync. On the watch, pick it like any other watch face. When it asks, allow location: it picks
+      your sunrise, sunset and weather (see <a href="privacy.html">Privacy</a>).</p>
+  </details>
+
+  <details>
+    <summary>How do I change the settings?</summary>
+    <p>On the phone: in the Connect IQ Store app, open the face under your watch's watch faces and choose Settings.
+      On the watch: open the watch face's menu and choose Customise. Both have the same settings in the same order:
+      the everyday ones first, then Display and battery, Sky and lighting, and Weather source.</p>
+  </details>
+
+  <details>
+    <summary>I changed a setting on the phone and it went back</summary>
+    <p>Garmin's phone app can lose a change made inside a section (Display and battery, Sky and lighting, Weather
+      source) if you go back without saving. Press Save before leaving the section, or change it on the watch
+      (Customise), which always keeps it.</p>
+  </details>
+
+  <details>
+    <summary>Which weather source should I use?</summary>
+    <ul>
+      <li><b>Garmin</b> (the default): uses the least battery, and works with the phone away for a while.</li>
+      <li><b>Open-Meteo</b>: free, nothing to set up.</li>
+      <li><b>OpenWeather</b>: needs your own free API key from
+        <a href="https://openweathermap.org/">openweathermap.org</a>, typed into the OpenWeather API key setting.
+        A new key can take a few hours to start working.</li>
+    </ul>
+    <p>The web sources are fetched through your phone every 15, 30 or 60 minutes, as you choose, so the phone needs
+      to be nearby with Bluetooth on.</p>
+  </details>
+
+  <details>
+    <summary>The weather on the watch isn't what I see outside</summary>
+    <p>Weather reaches the watch through your phone, so it can be a little behind, and Garmin's reading comes from a
+      nearby weather station. A web reading more than 6 hours old stops showing rain. If it's often wrong for
+      you, try another weather source.</p>
+  </details>
+
+  <details>
+    <summary>Does it use much battery?</summary>
+    <p>The defaults (Garmin weather for where you are) use the least. Web weather, a custom weather location and
+      the wake animation on every wrist raise use more; the settings mark them with "more battery".</p>
+  </details>
+
+  <details>
+    <summary>When do the fireworks go off?</summary>
+    <p>The next time you raise your wrist after reaching your step or floors goal (once a day each) or your
+      intensity-minutes goal (once a week). You can turn them off in the settings.</p>
+  </details>
+
+  <details>
+    <summary>Which watches does it work on?</summary>
+    <p>Round Garmin watches with Connect IQ 5 or 6 (Forerunner, fenix, epix, Enduro, Venu, vivoactive, Instinct
+      AMOLED and others), plus the Venu Sq 2 and Venu X1. The store page lists every model.</p>
+  </details>
+
+  <details>
+    <summary>Can I suggest a city?</summary>
+    <p>Yes, please! Leave a review on the store page or email me. More cities are on the way.</p>
+  </details>
+
+  <h2 id="contact">Contact</h2>
+  <p>Faces for Places is made by one independent developer in the UK. Questions, bugs or ideas:
+    <a href="mailto:sunshallowed@protonmail.com">sunshallowed@protonmail.com</a>, or Contact Developer on the store
+    page. I reply within 48 hours, and I see messages much sooner than reviews.</p>
+</main>
+
+<footer>
+  <p>© 2026 Ifunanya Odunukwe · <a href="privacy.html">Privacy policy</a></p>
+  <p>Garmin and Connect IQ are trademarks of Garmin Ltd. or its subsidiaries. This site isn't made or endorsed by Garmin.</p>
+</footer>
+</body>
+</html>
