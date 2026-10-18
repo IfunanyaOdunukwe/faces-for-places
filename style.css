@@ -68,6 +68,39 @@ nav .home img { width: 32px; height: 32px; border-radius: 50%; }
 
 .wide { border-radius: 12px; margin: 12px 0; }
 
+.cities { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px 20px; }
+.cities figure { margin: 0; }
+.cities img, .cities .more { width: 100%; aspect-ratio: 1; border-radius: 50%; }
+.cities .more {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  border: 3px dashed var(--accent); color: var(--accent);
+  font-family: "Silkscreen", monospace; font-size: 1.4rem; line-height: 1.3;
+}
+.cities figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 10px; }
+.cities figcaption b {
+  display: inline-block; margin-right: 6px; color: var(--text);
+  font-family: "Silkscreen", monospace; font-weight: 400; font-size: 1.05rem;
+}
+.cities .desc { display: block; margin-top: 2px; }
+@media (max-width: 560px) {
+  .cities, .gallery { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
+  .cities .more { font-size: 1rem; }
+  .cities figcaption { font-size: 0.85rem; }
+}
+.badge {
+  display: inline-block; margin-bottom: 4px; padding: 0 8px; border-radius: 99px; vertical-align: 2px;
+  border: 1px solid var(--accent); color: var(--accent); font-size: 0.75rem; white-space: nowrap;
+}
+.badge.free { background: var(--accent); color: var(--night); }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 28px; margin-top: 8px; }
+.features h3 { color: var(--accent); }
+.features ul { padding-left: 1.2em; margin: 0; }
+.features li { margin-bottom: 6px; }
+
+.card .price { margin: 0 0 6px; color: var(--muted); }
+.card ul { padding-left: 1.2em; margin: 0 0 8px; }
+
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 12px; }
 .card h3 { color: var(--accent); }

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Faces for Places</title>
-<meta name="description" content="A pixel-art city watch face for Garmin watches. The sky follows your real sunrise and sunset, and your local weather: rain, snow, storms and clouds.">
+<meta name="description" content="Pixel-art city watch faces for Garmin watches: London, New York, Paris, Manchester and Giza. The sky follows your real sunrise and sunset, and your local weather: rain, snow, storms, sleet and clouds.">
 <meta property="og:title" content="Faces for Places">
-<meta property="og:description" content="A pixel-art city watch face for Garmin watches, whose sky follows your day and your weather.">
+<meta property="og:description" content="Five pixel-art cities for your Garmin watch, whose sky follows your day and your weather. Try London free in Faces for Places Lite.">
 <meta property="og:image" content="img/hero.png">
 <link rel="icon" href="img/cover.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,24 +18,65 @@
 <header>
   <nav>
     <a class="home" href="./"><img src="img/cover.png" alt="">Faces for Places</a>
+    <a href="#cities">Cities</a>
+    <a href="#features">Features</a>
+    <a href="#editions">Editions</a>
     <a href="#faq">FAQ</a>
-    <a href="privacy.html">Privacy</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
   <img class="hero" src="img/hero.png" width="1440" height="720"
-       alt="Faces for Places Lite: pixel-art London at dawn on a round watch, with day and night versions beside it">
+       alt="Faces for Places: London by day, New York at dusk, Paris and Manchester at night and Giza at dawn, each on a round watch face">
 
-  <h1>A tiny pixel-art city that lives through your day</h1>
-  <p class="lead">A watch face for Garmin watches. The sky follows your real sunrise and sunset, and when it rains,
-    snows or storms where you are, it does on your watch too.</p>
+  <h1>Watch faces whose sky follows your day</h1>
+  <p class="lead">Five pixel-art cities for Garmin watches: London, New York, Paris, Manchester and Giza. The sky
+    follows your real sunrise and sunset, and when it rains, snows or storms where you are, it does over the
+    skyline too.</p>
 
   <a class="cta" href="https://apps.garmin.com/apps/ed71a1ea-b74d-4fbb-a06b-3566b06835d3">Get Faces for Places Lite free on the Connect IQ Store</a>
-  <span class="cta soon">Faces for Places Full Version: coming soon to the Connect IQ Store</span>
+  <span class="cta soon">Faces for Places, all five cities: coming soon</span>
 
-  <h2>What it does</h2>
+  <h2 id="cities">The cities</h2>
+  <p>Each city is drawn pixel by pixel from its real skyline, with every sky, weather and animation below.
+    London is free in Lite; the full version has all five.</p>
+  <div class="cities">
+    <figure>
+      <img src="img/cities/london.png" width="390" height="390" alt="London by day: St Paul's, the London Eye, Big Ben and the Shard">
+      <figcaption><b>London</b> <span class="badge free">Free in Lite</span>
+        <span class="desc">From the West End rooftops: St Paul's, the London Eye, Big Ben and the Shard</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/cities/newyork.png" width="390" height="390" alt="New York at dusk: the Statue of Liberty in front of Manhattan and the Brooklyn Bridge">
+      <figcaption><b>New York</b> <span class="badge">Full version</span>
+        <span class="desc">The Empire State and Chrysler buildings, the Statue of Liberty, One World Trade Center and the Brooklyn Bridge</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/cities/paris.png" width="390" height="390" alt="Paris at night: the Eiffel Tower lit gold, reflected in the Seine">
+      <figcaption><b>Paris</b> <span class="badge">Full version</span>
+        <span class="desc">The Eiffel Tower across the Seine, gold under its lights after sunset, with the Arc de Triomphe in the distance</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/cities/manchester.png" width="390" height="390" alt="Manchester at night: towers, a clock tower, and lit bars under a railway viaduct">
+      <figcaption><b>Manchester</b> <span class="badge">Full version</span>
+        <span class="desc">At street level: the Deansgate Square towers, the Refuge clock tower and Beetham Tower, with a train crossing
+        the viaduct into Piccadilly over lit bars in its arches</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/cities/giza.png" width="390" height="390" alt="Giza at dawn: the Sphinx and the pyramids, Cairo Tower across the Nile">
+      <figcaption><b>Giza</b> <span class="badge">Full version</span>
+        <span class="desc">The Sphinx and the pyramids, with Cairo Tower and the Citadel across the Nile</span></figcaption>
+    </figure>
+    <figure>
+      <div class="more"><span>Nearest<br>to me</span></div>
+      <figcaption><b>Nearest to me</b> <span class="badge">Full version</span>
+        <span class="desc">Shows the city closest to where you are, and changes when you travel. More cities are on the way:
+        <a href="#contact">suggest one</a>.</span></figcaption>
+    </figure>
+  </div>
+
+  <h2 id="features">What it does</h2>
   <div class="gallery">
     <figure><img src="img/daycycle.gif" width="390" height="390" alt="London's sky through a whole day"><figcaption>Dawn, day, dusk and night, timed to your sun</figcaption></figure>
     <figure><img src="img/storm.gif" width="390" height="390" alt="A thunderstorm over London with lightning"><figcaption>Live weather: rain, snow, storms, sleet, clouds</figcaption></figure>
@@ -43,31 +84,66 @@
     <figure><img src="img/fireworks.gif" width="390" height="390" alt="Fireworks over London"><figcaption>Fireworks when you reach a goal</figcaption></figure>
   </div>
 
-  <ul>
-    <li>A short wake animation when you raise your wrist</li>
-    <li>Up to three slots: heart rate, steps, battery, Body Battery, stress, temperature, UV index, sunrise and
-      sunset, calories, floors, intensity minutes, Pulse Ox, respiration, sleep score, altitude, recovery time, alarms</li>
-    <li>Weather from Garmin, Open-Meteo or OpenWeather, for where you are or a place you choose</li>
-    <li>Always-on mode with the time, and the date if you like</li>
-    <li>English, German, French, Italian, Spanish, Arabic (with Eastern Arabic digits) and Chinese (Simplified and
-      Traditional, with the date in Chinese numerals)</li>
-  </ul>
+  <div class="features">
+    <div>
+      <h3>Sky and weather</h3>
+      <ul>
+        <li>A sky that moves through dawn, day, dusk and a starry night, timed to your own sunrise and sunset</li>
+        <li>Dawn and dusk last as long as they really do where you are: short near the equator, long in a northern
+          summer, with no full night when the sun barely sets</li>
+        <li>Or choose the light: always day, dawn, dusk or night, or your own times</li>
+        <li>Live weather, each with its own sky and animation: rain, snow settling on the roofs, thunderstorms with
+          lightning behind the skyline, sleet, and drifting clouds</li>
+        <li>Weather from Garmin, Open-Meteo or OpenWeather (your own key), for where you are or a place you choose,
+          or one weather all the time</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Little moments</h3>
+      <ul>
+        <li>A short wake animation when you raise your wrist: every time, at most every 15 minutes, or off</li>
+        <li>Fireworks over the city when you reach your step, floors or intensity-minutes goal</li>
+        <li>A plug above the time while the watch charges, and a crossed-out phone when your phone is out of
+          range (each can be turned off)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Make it yours</h3>
+      <ul>
+        <li>Up to three slots: heart rate, steps, battery, Body Battery, stress, temperature, UV index, sunrise,
+          sunset, calories, floors, intensity minutes, Pulse Ox, respiration, sleep score, altitude, recovery time,
+          alarms</li>
+        <li>12 or 24-hour time, or the watch's own; the date in three styles, or hidden</li>
+        <li>Always-on mode: the time, with the date if you like</li>
+        <li>Settings in the Connect IQ app on your phone, or on the watch itself (Customise)</li>
+        <li>English, German, French, Italian, Spanish, Arabic (with Eastern Arabic digits) and Chinese (Simplified
+          and Traditional, with the date in Chinese numerals)</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>Two editions</h2>
+  <h2 id="editions">Two editions</h2>
+  <p>Both have the same skies, weather, animations and settings. The difference is the cities.</p>
   <div class="cards">
     <div class="card">
       <h3><a href="https://apps.garmin.com/apps/ed71a1ea-b74d-4fbb-a06b-3566b06835d3">Faces for Places Lite</a></h3>
-      <p><b>Free.</b> London from the West End rooftops: St Paul's, the London Eye, Big Ben and the Shard, with
-        every sky, weather, animation and setting.</p>
+      <p class="price">Free, on the store now</p>
+      <ul>
+        <li>London</li>
+        <li>Every sky, weather, animation and setting</li>
+        <li>The other cities show as locked</li>
+      </ul>
     </div>
     <div class="card">
       <h3>Faces for Places</h3>
-      <p><b>£2.99, coming soon.</b> London, New York, Paris, Manchester and Giza, plus "Nearest to me", which shows
-        the city closest to you, with more cities to come.</p>
+      <p class="price">£2.99, coming soon</p>
+      <ul>
+        <li>London, New York, Paris, Manchester and Giza</li>
+        <li>Nearest to me: the city closest to you</li>
+        <li>Every sky, weather, animation and setting</li>
+      </ul>
     </div>
   </div>
-  <img class="wide" src="img/teaser.png" width="1440" height="720"
-       alt="The cities of the full edition at different times of day, and a circle inviting suggestions for more">
 
   <h2>On your screen</h2>
   <p>AMOLED watches show the scene in full colour. MIP watches (Forerunner 255, fenix 7, Enduro and others) have 64
@@ -85,6 +161,13 @@
   </details>
 
   <details>
+    <summary>What's the difference between Lite and the full version?</summary>
+    <p>Only the cities. Lite is free and has London, with every sky, weather, animation and setting. The full
+      version (£2.99, coming soon) adds New York, Paris, Manchester and Giza, and Nearest to me. Try Lite first to
+      see how it looks on your watch.</p>
+  </details>
+
+  <details>
     <summary>How do I change the settings?</summary>
     <p>On the phone: in the Connect IQ Store app, open the face under your watch's watch faces and choose Settings.
       On the watch: open the watch face's menu and choose Customise. Both have the same settings in the same order:
@@ -96,6 +179,13 @@
     <p>Garmin's phone app can lose a change made inside a section (Display and battery, Sky and lighting, Weather
       source) if you go back without saving. Press Save before leaving the section, or change it on the watch
       (Customise), which always keeps it.</p>
+  </details>
+
+  <details>
+    <summary>How does Nearest to me work?</summary>
+    <p>In the full version, Nearest to me (the default Place) shows whichever city is closest to you, using your
+      phone's location or the watch's last GPS fix. It checks again when you raise your wrist, so it changes when
+      you travel. Pick a city under Place to keep that one.</p>
   </details>
 
   <details>
@@ -116,6 +206,12 @@
     <p>Weather reaches the watch through your phone, so it can be a little behind, and Garmin's reading comes from a
       nearby weather station. A web reading more than 6 hours old stops showing rain. If it's often wrong for
       you, try another weather source.</p>
+  </details>
+
+  <details>
+    <summary>What are the little icons above the time?</summary>
+    <p>A plug means the watch is charging. A crossed-out phone means your phone is out of range, so the weather won't
+      update until it's back. You can turn either off under Display and battery.</p>
   </details>
 
   <details>
