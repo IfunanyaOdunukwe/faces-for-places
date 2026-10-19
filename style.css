@@ -93,10 +93,9 @@ nav .home img { width: 32px; height: 32px; border-radius: 50%; }
 }
 .badge.free { background: var(--accent); color: var(--night); }
 
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 28px; margin-top: 8px; }
-.features h3 { color: var(--accent); }
-.features ul { padding-left: 1.2em; margin: 0; }
-.features li { margin-bottom: 6px; }
+.features { columns: 2 300px; column-gap: 32px; padding-left: 1.2em; margin: 24px 0 0; }
+.features li { margin-bottom: 8px; break-inside: avoid; }
+.features b { color: var(--accent); font-weight: 600; }
 
 .card .price { margin: 0 0 6px; color: var(--muted); }
 .card ul { padding-left: 1.2em; margin: 0 0 8px; }
