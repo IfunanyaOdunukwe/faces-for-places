@@ -61,6 +61,14 @@ nav .home img { width: 32px; height: 32px; border-radius: 50%; }
 }
 .cta.soon { background: transparent; color: var(--accent); border: 2px solid var(--accent); cursor: default; }
 
+button.cta { border: 0; font-size: 1rem; cursor: pointer; }
+.field { display: block; margin: 16px 0 8px; }
+.field input {
+  display: block; width: 100%; max-width: 280px; margin-top: 6px; padding: 10px 12px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--card); color: var(--text);
+  font: 1.3rem ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase;
+}
+
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
 .gallery figure { margin: 0; }
 .gallery img { width: 100%; border-radius: 50%; }

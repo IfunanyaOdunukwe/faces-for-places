@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unlock every city · Faces for Places</title>
+<meta name="description" content="Unlock New York, Paris, Manchester, Giza and Nearest to me in Faces for Places Lite for £2.99.">
+<link rel="icon" href="img/cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="home" href="./"><img src="img/cover.png" alt="">Faces for Places</a>
+    <a href="./#faq">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="./#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Unlock every city</h1>
+  <p class="lead">£2.99, once, for one watch: New York, Paris, Manchester, Giza and Nearest to me in
+    Faces for Places Lite. London stays free either way.</p>
+
+  <h2>Your watch code</h2>
+  <p>You'll find it in Lite's settings: on the watch under Customise (the first row), or on your phone in the Connect
+    IQ Store app, under the face's Settings. Check it carefully: the unlock code only works on the watch this code
+    came from.</p>
+  <form method="post" action="https://faces-for-places-unlock.faces-for-places-unlock.workers.dev/checkout">
+    <label class="field">Watch code
+      <input name="watch" required autocomplete="off" autocapitalize="characters" spellcheck="false"
+             placeholder="ABCD-EFGH" pattern="[0-9A-Za-z\- ]{8,12}" maxlength="12"
+             title="8 letters and digits, like ABCD-EFGH">
+    </label>
+    <button class="cta" type="submit">Continue to payment</button>
+  </form>
+
+  <h2>What happens next</h2>
+  <ol>
+    <li>You pay on a Stripe page. Stripe sells the code for me, through its Onelink service, and handles your payment
+      and tax. Your price may be shown in your own currency, and your statement will show LINK.COM.</li>
+    <li>Your unlock code appears straight after paying. Save it: your receipt email doesn't include it. If you ever
+      lose it, email me your watch code and receipt and I'll send it again.</li>
+    <li>On your phone, type it into Lite's settings under Unlock code and press Save, then sync your watch.</li>
+  </ol>
+
+  <h2>Refunds</h2>
+  <p>Changed your mind? Email <a href="mailto:sunshallowed@protonmail.com">sunshallowed@protonmail.com</a> within 48
+    hours of buying for a full refund. Any problem with a code, such as a mistyped watch code or a new watch, email me
+    too and I'll sort it out.</p>
+
+  <h2>Before you buy</h2>
+  <p>Try London first, to see how the face looks on your watch. The full version, which needs no code, is coming to
+    the Connect IQ Store at the same price. Stripe can't take payment from a few countries, including China and
+    Russia. See <a href="privacy.html#unlock">what is kept when you buy</a>.</p>
+</main>
+
+<footer>
+  <p>© 2026 Ifunanya Odunukwe · <a href="./">Faces for Places</a></p>
+  <p>Garmin and Connect IQ are trademarks of Garmin Ltd. or its subsidiaries. This site isn't made or endorsed by Garmin.</p>
+</footer>
+</body>
+</html>
