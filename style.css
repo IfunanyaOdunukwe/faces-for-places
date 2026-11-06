@@ -74,6 +74,15 @@ button.cta { border: 0; font-size: 1rem; cursor: pointer; }
 .gallery img { width: 100%; border-radius: 50%; }
 .gallery figcaption { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
 
+/* Real photos: smooth scaling, not the pixel art's */
+.wrists { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+.wrists figure { margin: 0; }
+.wrists img, .wrists video {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover;
+  border-radius: 12px; image-rendering: auto;
+}
+.wrists figcaption { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+
 .wide { border-radius: 12px; margin: 12px 0; }
 
 .cities { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px 20px; }
@@ -91,7 +100,7 @@ button.cta { border: 0; font-size: 1rem; cursor: pointer; }
 }
 .cities .desc { display: block; margin-top: 2px; }
 @media (max-width: 560px) {
-  .cities, .gallery { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
+  .cities, .gallery, .wrists { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
   .cities .more { font-size: 1rem; }
   .cities figcaption { font-size: 0.85rem; }
 }
